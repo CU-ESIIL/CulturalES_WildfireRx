@@ -39,10 +39,3 @@ This section of the repository will include all the code developed for the proje
 - **Data Processing**: Scripts for cleaning, merging, and managing datasets.
 - **Visualization**: Code for creating figures, charts, and interactive visualizations.
 
-## Contributing to This Repository
-
-To maintain the quality and integrity of the repository, please adhere to the following guidelines:
-
-- Make sure all commits have a clear and concise message.
-- Document any major changes or decisions in the meeting notes.
-- Review and merge changes through pull requests to ensure oversight.
