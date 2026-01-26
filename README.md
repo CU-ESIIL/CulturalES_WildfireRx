@@ -1,19 +1,20 @@
 # CulturalES_WildfireRx - Kyle Manley
 
-This is the information page pertaining to the wildfire/Rx impacts to CES project. 
+This is the information page for the wildfire/Rx impacts to CES project. 
 
 Welcome to the CulturalES_WildfireRx repository, developed as part of Earth Lab and the Cooperative Institute for Research in Environmental Sciences (CIRES). This repository is the primary resource for the CIRES VFP project, which focuses on modeling the effects of disturbances and management practices on cultural ecosystem services across the western United States.
 
 ## Overview
 
-In this project, I will address the following questions: 
-1. How do patterns of CES use, specifically recreation, change after wildfire and Rx in the US West and what are the differences?
-2. How does reliance upon/use of CES lead to exposure/vulnerability to wildfire/Rx hazards?
-  a. What are the economic consequences of CES change post-fire and are there disparities within economies dependent upon recreation.
-  b. How often are recreationists exposed to smoke from wildfires versus Rx and what are the consequences?
+In this project, we will address the following questions: 
+1. How does public land visitaiton change after wildfire and Rx in the US West?
+  a. How does this impact differ by fire attributes (fire type, severity, size) or landscape context (state, underlying vegetation, land manager (e.g. USFS vs NPS)). 
+3. How does reliance upon/use of CES lead to exposure/vulnerability to wildfire/Rx hazards?
+  a. What are the economic consequences of CES change post-fire?
+  b. Are there disparities within economies dependent upon recreation?
 
 
-## How does fire impact public land visitaiton?
+## How does fire impact public land visitation?
 
 ![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/FireImpactConceptual.png)
 
