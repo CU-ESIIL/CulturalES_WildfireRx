@@ -13,23 +13,24 @@ In this project, I will address the following questions:
   b. How often are recreationists exposed to smoke from wildfires versus Rx and what are the consequences?
 
 
-## Project Proposal
+## How does fire impact public land visitaiton?
 
-![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/Framework.png)
+![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/FireImpactConceptual.png)
 
 
 
 ## Collaborators and Co-Authors 
 
 - Dr. Laura Dee: 
-- Dr. Jennifer Balch: 
+- Dr. Jennifer Balch:
+- Anna LoPresti:
 - Dr. Cody Evers:
 - Dr. Holly Nowell:
 - Dr. Spencer Wood:
 - Dr. Katherine Siegel
+- Dr. Jamie Peeler
 - Tyler McIntosh:
-- Anna LoPresti:
-- Ash Cale:
+- Dr. Ash Cale:
 
 ## Code Repository
 
