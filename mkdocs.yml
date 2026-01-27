@@ -1,10 +1,10 @@
-site_name: 'ESIIL Postdoctoral Researcher OASIS'
-site_description: 'Central resource for Wildifre/Rx Impacts to CES'
-site_author: Ty Tuff
+site_name: 'CulturalES WildfireRx'
+site_description: 'Central resource for Wildfire and prescribed fire impacts on recreational ecosystem services'
+site_author: 'Kyle Manley'
 site_url: https://cu-esiil.github.io/CulturalES_WildfireRx
 
 # Repository
-repo_name: Postdoc_OASIS
+repo_name: CulturalES_WildfireRx
 repo_url: https://github.com/CU-ESIIL/CulturalES_WildfireRx
 edit_uri: edit/main/docs/
 # Copyright
