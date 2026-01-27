@@ -2,7 +2,7 @@
 
 This is the information page for the wildfire/Rx impacts to CES project. 
 
-Welcome to the CulturalES_WildfireRx repository, developed as part of Earth Lab and the Cooperative Institute for Research in Environmental Sciences (CIRES). This repository is the primary resource for the CIRES VFP project, which focuses on modeling the effects of disturbances and management practices on cultural ecosystem services across the western United States.
+Welcome to the CulturalES_WildfireRx repository, developed as part of MORPHO Rx Working Group, Earth Lab, and the Cooperative Institute for Research in Environmental Sciences (CIRES). This repository is the primary resource for the MORPHO Rx recreational ecosystem services group and CIRES VFP project, which focuses on modeling the effects of wildfire and prescribed fire on recreational ecosystem services.
 
 ## Overview
 
