@@ -2,7 +2,7 @@
 
 This is the information page for the wildfire/Rx impacts to CES project. 
 
-Welcome to the CulturalES_WildfireRx repository, developed as part of MORPHO Rx Working Group, Earth Lab, and the Cooperative Institute for Research in Environmental Sciences (CIRES). This repository is the primary resource for the MORPHO Rx recreational ecosystem services group and CIRES VFP project, which focuses on modeling the effects of wildfire and prescribed fire on recreational ecosystem services.
+Welcome to the CulturalES_WildfireRx repository, developed as part of the [MORPHO Rx Working Group](https://rx-char.github.io/), Earth Lab, and the Cooperative Institute for Research in Environmental Sciences ([CIRES](https://cires.colorado.edu/people/kyle-manley)). This repository is the primary resource for the MORPHO Rx recreational ecosystem services group and CIRES VFP project, which focuses on modeling the effects of wildfire and prescribed fire on recreational ecosystem services.
 
 ## Overview
 
@@ -23,23 +23,16 @@ In this project, we will address the following questions:
 ![Our Approach](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/Figures/MethodsFigure.png)
 
 ## Collaborators and Co-Authors 
+- Dr. Kyle Manley: Cooperative Institute for Research in Environmental Sciences; University of Colorado Boulder; Earth Lab
+- Dr. Laura Dee: University of Colorado Boulder; Department of Ecology and Evolutionary Biology
+- Dr. Jennifer Balch: The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
+- Anna LoPresti: University of Colorado Boulder; Department of Ecology and Evolutionary Biology
+- Dr. Cody Evers: Portland State University; Department of Environmental Science and Management
+- Dr. Holly Nowell: Tall Timbers Research Station & Land Conservancy
+- Dr. Spencer Wood: University of Washington; School of Environmental and Forest Sciences
+- Dr. Katherine Siegel: Cooperative Institute for Research in Environmental Sciences; The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
+- Dr. Jamie Peeler:  University of Montana; Department of Ecosystem and Conservation Sciences
+- Tyler McIntosh: University of Colorado Boulder; Department of Geography; Department of Ecology and Evolutionary Biology
+- Dr. Ash Cale: University of Nevada Reno; Department of Natural Resources and Environmental Sciences
 
-- Dr. Laura Dee: 
-- Dr. Jennifer Balch:
-- Anna LoPresti:
-- Dr. Cody Evers:
-- Dr. Holly Nowell:
-- Dr. Spencer Wood:
-- Dr. Katherine Siegel
-- Dr. Jamie Peeler
-- Tyler McIntosh:
-- Dr. Ash Cale:
-
-## Code Repository
-
-This section of the repository will include all the code developed for the project:
-
-- **Analysis Code**: Scripts for data analysis, statistical modeling, etc.
-- **Data Processing**: Scripts for cleaning, merging, and managing datasets.
-- **Visualization**: Code for creating figures, charts, and interactive visualizations.
 
