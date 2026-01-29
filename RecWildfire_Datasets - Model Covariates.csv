@@ -1,0 +1,280 @@
+Feature,category,source,temporal_resolution,spatial_resolution,units,transformation,notes
+log_aud,Digital Mobility,AllTrails,monthly,Aggregated to site,log(1 + monthly user-days),log1p ,Monthly digital mobility proxy; log1p applied after monthly aggregation.
+log_eud,Digital Mobility,Ebird,monthly,Aggregated to site,log(1 + monthly user-days),log1p ,Monthly digital mobility proxy; log1p applied after monthly aggregation.
+log_pud,Digital Mobility,Flickr,monthly,Aggregated to site,log(1 + monthly user-days),log1p ,Monthly digital mobility proxy; log1p applied after monthly aggregation.
+log_rud,Digital Mobility,Reveal,monthly,Aggregated to site,log(1 + monthly user-days),log1p ,Monthly digital mobility proxy; log1p applied after monthly aggregation.
+rud_x_available,Digital Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,0/1,,Availability flag used to avoid treating missing sources as true zeros.
+has_mobility_data,Derived Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,0/1,,Availability flag used to avoid treating missing sources as true zeros.
+mobility_diversity,Derived Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,,,
+mobility_per_km2,Derived Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,,ratio,
+mobility_sources_active,Derived Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,,,
+mobility_total,Derived Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,,,
+summer_mobility,Derived Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,,,
+winter_mobility,Derived Mobility,"Digital mobility proxies, aggregated monthly",monthly,Aggregated to site,,,
+access_mean,Infrastructure & Accessibility,https://figshare.com/articles/dataset/Travel_time_to_cities_and_ports_in_the_year_2015,static (per site),Per site polygon,minutes (estimated travel time to the closest major city),,"Nelson et al., 2019"
+primroad_dist_mean,Infrastructure & Accessibility,Census TIGER/line - Roads (https://catalog.data.gov/dataset/census-tiger-line-roads1),static (per site),Per site polygon,km,,derived from Census TIGER/line Roads
+road_density_mean,Infrastructure & Accessibility,Census TIGER/line - Roads (https://catalog.data.gov/dataset/census-tiger-line-roads1),static (per site),Per site polygon,km/km²,,derived from Census TIGER/line Roads
+access_closed,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+access_open,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+access_restricted,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+gap_status,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,GAP status ,,Majority GAP status (by overlap area) from PADUS.
+is_blm,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+is_federal,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+is_fws,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+is_nonfed,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+is_nps,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+is_usfs,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,PADUS
+highly_protected,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,0/1,,"PADUS, GAP's 1 or 2"
+iucn_cat,Management / Protection / Access,PADUS overlay,static (per site),Per site polygon,IUCN Category,,PADUS
+has_biking,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_boating,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_camping,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_climbing,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_fishing,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_hiking,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_hunting,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_land_activities,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_picnic,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_rud_data,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_skiing,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_swimming,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_water_activities,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+has_wildlife_viewing,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,0/1,,Availability flag used to avoid treating missing sources as true zeros. Pulled from RIDB API.
+total_activities,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,activities ,,activities alpha diversity
+total_facilities,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,facilities ,,
+unique_activities,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,activities,,
+activity_beta,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,activities ,,activities beta diversity
+log_activities,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,,log1p (if applicable),
+log_facilities,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,,log1p (if applicable),
+facility_density,Recreation amenities & activities (RIDB),RIDB recreation amenities/activities features,static (per site),Per site polygon,,density,
+area_km2,Site geometry,Polygon geometry attributes (area) + transforms,static (per site),Per site polygon,km²,,
+log_area_km2,Site geometry,Polygon geometry attributes (area) + transforms,static (per site),Per site polygon,km²,log1p,
+sqrt_area_km2,Site geometry,Polygon geometry attributes (area) + transforms,static (per site),Per site polygon,km²,sqrt,
+is_fall,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,0/1,,
+is_peak_season,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,0/1,,
+is_spring,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,0/1,,
+is_summer,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,0/1,,
+is_winter,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,0/1,,
+month_cos,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,,sin/cos encoding,
+month_sin,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,,sin/cos encoding,
+month_squared,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,,,
+year_centered,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,,,
+log_month,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,,log1p (if applicable),
+year_month_interaction,Time / Seasonality,Derived from panel time index (year/month),monthly,Per site polygon,,,
+elev_mean,Topography,"Elevation & slope rasters (e.g., LANDFIRE/DEM-derived)",static (per site),Per site polygon,m,,Landfire
+slope_mean,Topography,"Elevation & slope rasters (e.g., LANDFIRE/DEM-derived)",static (per site),Per site polygon,degrees,,Landfire
+grass_pct_mean,Vegetation,Landfire percent cover rasters (tree/shrub/grass percent),static (per site),Per site polygon,,,2019 LandFire
+shrub_pct_mean,Vegetation,Landfire percent cover rasters (tree/shrub/grass percent),static (per site),Per site polygon,,,2019 LandFire
+tree_pct_mean,Vegetation,Landfire percent cover rasters (tree/shrub/grass percent),static (per site),Per site polygon,,,2019 LandFire
+peak_dens_mean,Site Features,https://www.arcgis.com/home/item.html?id=6706f7e6712b4b479dcb4fce4b7b3172,static (per site),Per site polygon,"peaks per square kilometer, estimated using a ~200 km moving radius",,Calculated in ArcGIS Pro
+log_river_km,Site Features,National Hydrography Dataset,static (per site),Per site polygon,km,log1p (if applicable),
+river_km,Site Features,National Hydrography Dataset,static (per site),Per site polygon,km,,
+water_km2,Site Features,National Hydrography Dataset,static (per site),Per site polygon,km²,,
+log_water_km2,Site Features,National Hydrography Dataset,static (per site),Per site polygon,km²,log1p (if applicable),
+trail_km,Site Features,National Digital Trails,static (per site),Per site polygon,km,,
+log_trail_km,Site Features,National Digital Trails,static (per site),Per site polygon,km,log1p (if applicable),
+trail_density_mean,Site Features,National Digital Trails,static (per site),Per site polygon,km/km²,,Calculated in ArcGIS Pro
+cloud_cover,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,%,,
+cooling_degree_days,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,days,,
+frost_3mo_sum,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (3 month sum),Sampled at site centroid,days,,
+frost_days,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,days,,
+frost_days_ytd,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (year to date),Sampled at site centroid,days,,
+precipitation_sum,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,mm,,
+temperature_max,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,°C,,
+temperature_mean,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,°C,,
+temperature_min,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,°C,,
+temperature_range,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,°C,,
+wind_gusts,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,km/h,,
+wind_speed,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Sampled at site centroid,km/h,,
+cooling_dd_ytd,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (year to date),Per site polygon,,,
+heat_index,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Per site polygon,,,
+precip_3mo,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (3 month moving average),Per site polygon,mm,,
+precip_ytd,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (year to date),Per site polygon,mm,,
+sunny_days,Weather / Climate,ERA5 via OpenMeteo Archive API (daily -> monthly aggregates) + derived monthly metrics,monthly (aggregated from daily),Per site polygon,days/month,,
+access_open_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+access_open_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+access_restricted_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+access_restricted_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+access_x_frost,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+access_x_precip,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+area_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+dist_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+dist_x_month_cos,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+dist_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+dist_x_precip,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+dist_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+dist_x_wind,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_frost,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_is_summer,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_month_cos,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_precip,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+elev_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+frost_ytd_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+gap_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+gap_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_camping_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_camping_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_skiing_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_skiing_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_skiing_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_water_activities_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_water_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_water_x_is_summer,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+has_water_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_is_peak_season,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_is_summer,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_month_cos,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_blm_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_is_peak_season,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_is_summer,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_month_cos,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_fws_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_is_peak_season,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_is_summer,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_month_cos,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_nps_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_is_peak_season,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_is_summer,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_month_cos,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+is_usfs_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_area_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_area_x_is_winter,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_area_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_access,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_access_closed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_access_open,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_access_restricted,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_activities,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_frost,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_is_blm,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_is_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_is_fws,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_is_nonfed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_is_nps,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_is_usfs,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_own_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_precip,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_road_density,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_tree,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_aud_x_water,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_access,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_access_closed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_access_open,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_access_restricted,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_activities,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_frost,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_is_blm,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_is_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_is_fws,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_is_nonfed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_is_nps,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_is_usfs,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_own_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_precip,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_road_density,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_tree,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_eud_x_water,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_access,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_access_closed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_access_open,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_access_restricted,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_activities,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_frost,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_is_blm,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_is_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_is_fws,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_is_nonfed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_is_nps,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_is_usfs,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_own_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_precip,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_road_density,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_tree,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_pud_x_water,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_access,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_access_closed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_access_open,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_access_restricted,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_activities,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_area,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_frost,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_is_blm,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_is_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_is_fws,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_is_nonfed,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_is_nps,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_is_usfs,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_own_federal,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_precip,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_road_density,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_trails,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_tree,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+log_rud_x_water,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+mobility_x_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+mobility_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+own_federal_x_log_aud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+own_federal_x_log_eud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+own_federal_x_log_pud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+own_federal_x_log_rud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+precip_ytd_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+protected_x_dist,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+protected_x_elev,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+protected_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+rud_x_available,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+trails_x_is_peak,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+trails_x_month_sin,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+tree_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+water_x_cooling_dd,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+water_x_temp,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+year_x_log_aud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+year_x_log_eud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+year_x_log_pud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
+year_x_log_rud,Interactions,Derived interaction term (feature engineering),monthly,Per site polygon,,product (interaction),Interaction term.
