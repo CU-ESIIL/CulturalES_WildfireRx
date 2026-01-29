@@ -16,9 +16,11 @@ In this project, we will address the following questions:
 
 ## How does fire impact public land visitation?
 
-![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/concept_fig.png)
+![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/Figures/concept_fig.png)
 
+## How do quantify fire's imapct on recreation?
 
+![Our Approach](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/Figures/MethodsFigure.png)
 
 ## Collaborators and Co-Authors 
 
