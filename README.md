@@ -20,7 +20,7 @@ Manley, K., Wood, S., Evers, C., Nowell, H., Balch, J.K., Braun, L., Cale, A., L
 - Do recreation-dependent counties experience disproportionate wildfire exposure and impacts?
 - What are the implications for environmental justice and equitable fire management?
 
-![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/concept_fig.png)
+![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/figures/concept_fig.png)
 
 ## Key Findings
 
@@ -61,7 +61,7 @@ Manley, K., Wood, S., Evers, C., Nowell, H., Balch, J.K., Braun, L., Cale, A., L
 
 3. **Heterogeneity Analysis**: Effects stratified by fire size (small/medium/large), severity (CBI-based low/moderate/high), and vegetation type (grass/shrub/forest).
 
-![Our Approach](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/MethodsFigure.png)
+![Our Approach](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/figures/MethodsFigure.png)
 
 ## Code and Reproducibility
 
