@@ -2,7 +2,7 @@
 
 **A comprehensive analysis of fire effects on public land visitation across California and Colorado (2020-2024)**
 
-This repository contains code and data for quantifying how wildfire and prescribed fire reshape recreational visitation on public lands. Recreation is among the most prominent non-material contributions of nature (cultural ecosystem services) to human well-being, supporting local economies, cultural connection, and place-based values across the western United States. This work is part of the [MORPHO Rx Working Group](https://rx-char.github.io/) and a Cooperative Institute for Research in Environmental Sciences Visiting Fellowship Program project.
+This repository contains code and data for quantifying how wildfire and prescribed fire reshape recreational visitation on public lands. Recreation is among the most prominent non-material contributions of nature (cultural ecosystem services) to human well-being, supporting local economies, cultural connection, and place-based values across the western United States. This work is part of the [MORPHO Rx Working Group](https://rx-char.github.io/) and a Cooperative Institute for Research in Environmental Sciences ([Visiting Fellowship Program project](https://cires.colorado.edu/people/kyle-manley).
 
 ## Citation
 
