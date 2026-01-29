@@ -4,10 +4,6 @@
 
 This repository contains code and data for quantifying how wildfire and prescribed fire reshape recreational visitation on public lands. Recreation is among the most prominent non-material contributions of nature (cultural ecosystem services) to human well-being, supporting local economies, cultural connection, and place-based values across the western United States. This work is part of the [MORPHO Rx Working Group](https://rx-char.github.io/) and a Cooperative Institute for Research in Environmental Sciences [Visiting Fellowship Program project](https://cires.colorado.edu/people/kyle-manley).
 
-## How does fire impact public land visitation?
-
-![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/concept_fig.png)
-
 ## Citation
 
 Manley, K., Wood, S., Evers, C., Nowell, H., Balch, J.K., Braun, L., Cale, A., LoPresti, A., McIntosh, T.L., Peeler, J., Siegel, K., & Dee, L.E. (2025). Fire and Recreation in the U.S. West: Modeling Impacts of Wildfire and Prescribed Fire on Nature's Non-Material Contributions to People. *In preparation*.
@@ -23,6 +19,8 @@ Manley, K., Wood, S., Evers, C., Nowell, H., Balch, J.K., Braun, L., Cale, A., L
 **2. Who bears the burden of fire impacts on recreation?**
 - Do recreation-dependent counties experience disproportionate wildfire exposure and impacts?
 - What are the implications for environmental justice and equitable fire management?
+
+![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/concept_fig.png)
 
 ## Key Findings
 
