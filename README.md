@@ -93,7 +93,7 @@ This research was supported by the CIRES Visiting Fellowship Program and the MOR
 
 ## License
 
-This project is licensed under the MIT License. See LICENSE file for details.
+This project is licensed under Creative Commons Attribution 4.0 International License (CC BY 4.0). See LICENSE file for details.
 
 
 
