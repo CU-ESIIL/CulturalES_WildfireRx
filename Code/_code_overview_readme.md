@@ -2,9 +2,17 @@
 
 This document centralizes the high-level descriptions, inputs, outputs, and parameters for the project notebooks while retaining the original markdown cells within each notebook.
 
+1. Process_Grid_and_TreatmentSites.ipnb
+2. Matching_Code.ipynb
+3. FinalVisitationModel.ipynb
+4. DiD_FireType.ipynb
+5. DiD_Heterogeneity.ipynb
+
 ---
 
 ## 01 — Process Grid and Treatment Sites (CO + CA)
+
+**Code:** Process_Grid_and_TreatmentSites.ipynb
 
 This notebook builds analysis-ready spatial layers for Colorado (grid attributes) and California (treatment sites). It:
 
@@ -57,6 +65,8 @@ This notebook builds analysis-ready spatial layers for Colorado (grid attributes
 
 ## 02 — Matching Code: Control Site Selection for Treatments
 
+**Code:** 02_Matching_Code.ipynb
+
 This notebook selects matched control sites for each treatment (e.g., Rx-burn) by rotating/translating the treatment geometry over eligible grid cells and minimizing feature distance under spatial/land constraints.
 
 ### Key Inputs
@@ -77,6 +87,7 @@ This notebook selects matched control sites for each treatment (e.g., Rx-burn) b
 - `all_controls_merged.shp`: Merge of all final controls (if any exist).
 
 ### Key Parameters and Logic
+
 - CRS: All inputs reprojected to the grid CRS; PADUS + MTBS clipped to the grid bounding box for speed.
 - MTBS year filter: `ig_year >= 2010` (derived from `Ig_Date`).
 - Public land flags: precompute `public_overlap` (PADUS intersects cell) and `touches_public` (cell centroid intersects PADUS).
@@ -89,6 +100,7 @@ This notebook selects matched control sites for each treatment (e.g., Rx-burn) b
 - Final control cleaning: clip to PADUS; subtract urban polygons and roads buffered by 100 m.
 
 ### Usage Notes
+
 - Set the file paths and `output_dir` before running; ensure fields (`Incid_Name`, `Ig_Date`) exist in inputs.
 - Keep all datasets in consistent CRS for valid distance/area calculations.
 - Outputs are written per treatment and merged at the end if present.
@@ -96,20 +108,26 @@ This notebook selects matched control sites for each treatment (e.g., Rx-burn) b
 ---
 
 ## 03 — Final Visitation Model: Treatment vs Control Predictions
+
+**Code:** 03_FinalVisitationModel.ipynb
+
 This notebook fits the final visitation model and produces out-of-sample predictions for treatment and matched control sites to support downstream DiD analyses.
 
 ### Key Inputs
+
 - `data/RecWildfire_Datasets - Model Covariates.csv`: Model-ready covariates for visitation prediction.
 - Treatment sites from prior steps (e.g., `...processed_Rx_sites_CA_final.shp`).
 - Matched control clusters from prior steps (e.g., `control_final_{Incid_Name}.shp`).
 - Optional: grid-level attributes (access, trails, proxies, elevation, climate) assembled in earlier notebooks.
 
 ### Key Outputs
+
 - `outputs/TreatmentControl_Predictions_CA.csv`: Predicted visitation for CA treatments and matched controls.
 - `outputs/TreatmentControl_Predictions_CO.csv`: Predicted visitation for CO treatments and matched controls.
 - Optional: model artifacts (metrics, feature importances, diagnostic plots).
 
 ### Key Parameters and Modeling Choices
+
 - Feature set: derived from model covariates and grid attributes.
 - Estimator: specify algorithm (e.g., GLM, RF, GBM) and hyperparameters.
 - Train/validation strategy: data splits or cross-validation.
@@ -117,6 +135,7 @@ This notebook fits the final visitation model and produces out-of-sample predict
 - CRS/joins: ensure any geospatial merges use consistent CRS before tabular modeling.
 
 ### Usage Notes
+
 - Confirm paths to covariates and geospatial inputs; update any `...` placeholders.
 - Validate feature columns exist and are clean; align units/scales as needed.
 - Run end-to-end to populate prediction CSVs for use in DiD notebooks.
@@ -124,19 +143,25 @@ This notebook fits the final visitation model and produces out-of-sample predict
 ---
 
 ## 04 — Difference-in-Differences by Fire Type
+
+**Code:** 04_DiD_FireType.ipynb
+
 This notebook estimates visitation impacts using a Difference-in-Differences (DiD) design, stratified by fire type (e.g., Rx vs. Wildfire), leveraging predictions and covariates assembled earlier.
 
 ### Key Inputs
+
 - `outputs/TreatmentControl_Predictions_CA.csv`: Predicted visitation for CA treatments vs controls.
 - `outputs/TreatmentControl_Predictions_CO.csv`: Predicted visitation for CO treatments vs controls.
 - `data/RecWildfire_Datasets - Model Covariates.csv`: Covariates for adjustment and subgrouping.
 - Treatment metadata from earlier steps (e.g., `Ig_Date`, fire type labels) for event timing and type classification.
 
 ### Key Outputs
+
 - `outputs/RecWildfire_Datasets - DiD_FireType.csv`: DiD estimates by fire type with standard errors and model controls.
 - Optional: summary tables/figures for pre-trends, effect sizes, and robustness checks.
 
 ### Key Parameters and Design Choices
+
 - Pre/post window: define event time window around ignition.
 - Fire type classification: rules/columns used to label Rx vs Wildfire.
 - Fixed effects: time and unit FE (e.g., grid/site) as applicable.
@@ -144,6 +169,7 @@ This notebook estimates visitation impacts using a Difference-in-Differences (Di
 - Standard errors: clustering level (e.g., by site or time).
 
 ### Usage Notes
+
 - Ensure prediction CSVs exist and align on unit IDs/time indexes.
 - Verify event dates and fire type labels are present and consistent.
 - Inspect pre-trends before finalizing DiD estimates.
@@ -151,24 +177,31 @@ This notebook estimates visitation impacts using a Difference-in-Differences (Di
 ---
 
 ## 05 — DiD Heterogeneity Analysis
+
+Code: DiD_Heterogeneity.ipynb
+
 This notebook extends the DiD framework to assess heterogeneity of visitation impacts across key dimensions (e.g., management type, access, trails, elevation, climate).
 
 ### Key Inputs
+
 - `outputs/TreatmentControl_Predictions_CA.csv` and `outputs/TreatmentControl_Predictions_CO.csv`: Treatment vs control predictions.
 - `data/RecWildfire_Datasets - Model Covariates.csv`: Covariates for subgroup definitions and interactions.
 - Grid/site attributes from earlier steps (e.g., `Mang_Name`, `Access_U_1`, `trail_leng`, `proxy_coun`, elevation, climate).
 
 ### Key Outputs
+
 - `outputs/RecWildfire_Datasets - DiD_Heterogeneity.csv`: DiD estimates with interaction terms/subgroup splits.
 - Optional: plots/tables showing effect variation across heterogeneity dimensions.
 
 ### Key Parameters and Design Choices
+
 - Subgroup variables: which attributes define heterogeneity (categorical or continuous).
 - Interaction specification: model interactions between treatment and subgroup variables.
 - Fixed effects and controls: consistent with the base DiD setup.
 - Standard errors: clustering strategy.
 
 ### Usage Notes
+
 - Confirm subgroup variables are available and well-defined.
 - Check balance and overlap across subgroups; consider binning continuous variables.
 - Compare baseline DiD results with heterogeneity models for robustness.
