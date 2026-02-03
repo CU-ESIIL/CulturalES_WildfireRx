@@ -2,11 +2,11 @@
 
 This document centralizes the high-level descriptions, inputs, outputs, and parameters for the project notebooks while retaining the original markdown cells within each notebook.
 
-1. Process_Grid_and_TreatmentSites.ipnb
-2. Matching_Code.ipynb
-3. FinalVisitationModel.ipynb
-4. DiD_FireType.ipynb
-5. DiD_Heterogeneity.ipynb
+1. **Process_Grid_and_TreatmentSites.ipnb**: Builds spatial layers for Colorado (grid attributes) and California (treatment sites).
+2. **Matching_Code.ipynb**: Selects matched control sites for each treatment (e.g., Rx-burn) by rotating/translating the treatment geometry over eligible grid cells and minimizing feature distance under spatial/land constraints.  
+3. **FinalVisitationModel.ipynb**: Builds the visitation prediction model using the processed spatial layers and matched control sites.
+4. **DiD_FireType.ipynb**: Estimates visitation impacts using a Difference-in-Differences (DiD) design, stratified by fire type (e.g., Rx vs. Wildfire), leveraging predictions and covariates assembled earlier.
+5. **DiD_Heterogeneity.ipynb**: Explores heterogeneity in visitation impacts across different dimensions (e.g., geography, fire severity) using the DiD framework.
 
 ---
 
@@ -14,7 +14,7 @@ This document centralizes the high-level descriptions, inputs, outputs, and para
 
 **Code:** Process_Grid_and_TreatmentSites.ipynb
 
-This notebook builds analysis-ready spatial layers for Colorado (grid attributes) and California (treatment sites). It:
+This notebook builds spatial layers for Colorado and California.
 
 - Derives burn history (2000–2024) for a Colorado grid from MTBS + FIRED perimeters.
 - Computes trail length per Colorado grid cell.
@@ -48,7 +48,6 @@ This notebook builds analysis-ready spatial layers for Colorado (grid attributes
 ### Key Parameters and Assumptions
 
 - Year filter: 2000–2024 for burn history.
-- CRS handling: All layers reprojected to the grid CRS; if the Colorado grid is geographic, it is reprojected to `EPSG:26913` for accurate lengths.
 - Spatial predicates: `intersects` for perimeters/trails-on-grid; `within` for points-in-grid.
 - Roads buffer: 100 m before subtracting from treatment geometries.
 - Burn interval: computed as 25 years divided by the number of burns in 2000–2024.
@@ -67,7 +66,7 @@ This notebook builds analysis-ready spatial layers for Colorado (grid attributes
 
 **Code:** 02_Matching_Code.ipynb
 
-This notebook selects matched control sites for each treatment (e.g., Rx-burn) by rotating/translating the treatment geometry over eligible grid cells and minimizing feature distance under spatial/land constraints.
+Purpose: Selects matched control sites for each treatment (e.g., Rx-burn) by rotating/translating the treatment geometry over eligible grid cells and minimizing feature distance under spatial/land constraints.
 
 ### Key Inputs
 
@@ -90,13 +89,14 @@ This notebook selects matched control sites for each treatment (e.g., Rx-burn) b
 
 - CRS: All inputs reprojected to the grid CRS; PADUS + MTBS clipped to the grid bounding box for speed.
 - MTBS year filter: `ig_year >= 2010` (derived from `Ig_Date`).
-- Public land flags: precompute `public_overlap` (PADUS intersects cell) and `touches_public` (cell centroid intersects PADUS).
+- Public land flags: `public_overlap` (PADUS intersects cell) and `touches_public` (cell centroid intersects PADUS).
 - Burn exclusion: exclude cells where `burned_since_2010` is true (intersects MTBS ≥ 2010).
 - Rotation sweep: rotate treatment geometry by 0–315° in 45° steps, then translate to candidate seed centroids.
 - Distance threshold: seed centroid must be ≥ 80,467.2 m (~50 miles) from the treatment centroid.
 - Area band: candidate cluster total area must be within [0.5×, 1.5×] of treatment area.
-- Feature match: minimize Euclidean distance across features `Access_U_1`, `trail_leng`, `proxy_coun`, `Elevation`, `Slope`, `Temperatur`, `Precipitat`.
-  - Aggregation: sum for `trail_leng`, `proxy_coun`; mean for others.
+- Feature match: minimize Euclidean distance across features:
+- `Access_U_1`, `trail_leng`, `proxy_coun`, `Elevation`, `Slope`, `Temperatur`, `Precipitat`.
+- Aggregation: sum for `trail_leng`, `proxy_coun`; mean for others.
 - Final control cleaning: clip to PADUS; subtract urban polygons and roads buffered by 100 m.
 
 ### Usage Notes
@@ -111,7 +111,7 @@ This notebook selects matched control sites for each treatment (e.g., Rx-burn) b
 
 **Code:** 03_FinalVisitationModel.ipynb
 
-This notebook fits the final visitation model and produces out-of-sample predictions for treatment and matched control sites to support downstream DiD analyses.
+Fits visitation model and produces out-of-sample predictions for treatment and matched control sites to support downstream DiD analyses.
 
 ### Key Inputs
 
