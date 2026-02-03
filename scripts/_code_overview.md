@@ -10,7 +10,7 @@ This document centralizes the high-level descriptions, inputs, outputs, and para
 
 ---
 
-## 01 — Process Grid and Treatment Sites (CO + CA)
+## 01 — Process data
 
 **Code:** Process_Grid_and_TreatmentSites.ipynb
 
@@ -43,7 +43,7 @@ This notebook builds spatial layers for Colorado and California.
 - `...colorado_grid_with_burn_history.shp` — Adds `last_year_burned`, `prior_burn_years`, `avg_burn_interval_years`.
 - `...colorado_grid_with_trail_length.shp` — Adds `grid_id`, `trail_length` (length in grid CRS units).
 - `...colorado_grid_manag_prox_trail_access.shp` — Adds `Mang_Name` (majority PADUS) and `proxy_count`.
-- `...processed_Rx_sites_CA_final.shp` — CA treatment cells with fire/trail flags and geometries clipped to PADUS, minus roads/urban.
+- `...processed_Rx_sites_CA_final.shp` — CA trt cells with fire/trail flags & geom clipped to PADUS, minus roads/urban.
 
 ### Key Parameters and Assumptions
 
@@ -62,7 +62,7 @@ This notebook builds spatial layers for Colorado and California.
 
 ---
 
-## 02 — Matching Code: Control Site Selection for Treatments
+## 02 — Matching Sites
 
 **Code:** 02_Matching_Code.ipynb
 
@@ -107,18 +107,16 @@ Purpose: Selects matched control sites for each treatment (e.g., Rx-burn) by rot
 
 ---
 
-## 03 — Final Visitation Model: Treatment vs Control Predictions
+## 03 — Visitation Model
 
-**Code:** 03_FinalVisitationModel.ipynb
+**Code:** 03_Visitation_Model.ipynb
 
 Fits visitation model and produces out-of-sample predictions for treatment and matched control sites to support downstream DiD analyses.
 
 ### Key Inputs
 
-- `data/RecWildfire_Datasets - Model Covariates.csv`: Model-ready covariates for visitation prediction.
 - Treatment sites from prior steps (e.g., `...processed_Rx_sites_CA_final.shp`).
 - Matched control clusters from prior steps (e.g., `control_final_{Incid_Name}.shp`).
-- Optional: grid-level attributes (access, trails, proxies, elevation, climate) assembled in earlier notebooks.
 
 ### Key Outputs
 
@@ -152,7 +150,6 @@ This notebook estimates visitation impacts using a Difference-in-Differences (Di
 
 - `outputs/TreatmentControl_Predictions_CA.csv`: Predicted visitation for CA treatments vs controls.
 - `outputs/TreatmentControl_Predictions_CO.csv`: Predicted visitation for CO treatments vs controls.
-- `data/RecWildfire_Datasets - Model Covariates.csv`: Covariates for adjustment and subgrouping.
 - Treatment metadata from earlier steps (e.g., `Ig_Date`, fire type labels) for event timing and type classification.
 
 ### Key Outputs
@@ -168,15 +165,9 @@ This notebook estimates visitation impacts using a Difference-in-Differences (Di
 - Controls: covariates included for precision/robustness.
 - Standard errors: clustering level (e.g., by site or time).
 
-### Usage Notes
-
-- Ensure prediction CSVs exist and align on unit IDs/time indexes.
-- Verify event dates and fire type labels are present and consistent.
-- Inspect pre-trends before finalizing DiD estimates.
-
 ---
 
-## 05 — DiD Heterogeneity Analysis
+## 05 — Difference-in-Differences by Subgroup
 
 Code: DiD_Heterogeneity.ipynb
 
@@ -184,7 +175,8 @@ This notebook extends the DiD framework to assess heterogeneity of visitation im
 
 ### Key Inputs
 
-- `outputs/TreatmentControl_Predictions_CA.csv` and `outputs/TreatmentControl_Predictions_CO.csv`: Treatment vs control predictions.
+- `outputs/TreatmentControl_Predictions_CA.csv` or
+- `outputs/TreatmentControl_Predictions_CO.csv`
 - `data/RecWildfire_Datasets - Model Covariates.csv`: Covariates for subgroup definitions and interactions.
 - Grid/site attributes from earlier steps (e.g., `Mang_Name`, `Access_U_1`, `trail_leng`, `proxy_coun`, elevation, climate).
 
