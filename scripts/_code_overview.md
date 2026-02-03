@@ -2,11 +2,11 @@
 
 This document centralizes the high-level descriptions, inputs, outputs, and parameters for the project notebooks while retaining the original markdown cells within each notebook.
 
-1. **Process_Grid_and_TreatmentSites.ipnb**: Builds spatial layers for Colorado (grid attributes) and California (treatment sites).
-2. **Matching_Code.ipynb**: Selects matched control sites for each treatment (e.g., Rx-burn) by rotating/translating the treatment geometry over eligible grid cells and minimizing feature distance under spatial/land constraints.  
-3. **FinalVisitationModel.ipynb**: Builds the visitation prediction model using the processed spatial layers and matched control sites.
-4. **DiD_FireType.ipynb**: Estimates visitation impacts using a Difference-in-Differences (DiD) design, stratified by fire type (e.g., Rx vs. Wildfire), leveraging predictions and covariates assembled earlier.
-5. **DiD_Heterogeneity.ipynb**: Explores heterogeneity in visitation impacts across different dimensions (e.g., geography, fire severity) using the DiD framework.
+1. **Process_Grid_and_TreatmentSites.ipnb**: Builds spatial layers (grid attributes for treatment sites and matching) for Colorado and California.
+2. **Matching_Code.ipynb**: Selects matched control sites for each treatment (e.g., Rx-burn) by iterating and rotating the respective treatment geometry over eligible grid cells and minimizing feature distance under spatial/land constraints.  
+3. **FinalVisitationModel.ipynb**: Builds the visitation prediction model using the processed on-site polygons and apply the best fit model to the treatments and matched control sites.
+4. **DiD_FireType.ipynb**: Estimates visitation impacts using a dynamic Difference-in-Differences (DiD) design, stratified by fire type (e.g., Rx vs. Wildfire).
+5. **DiD_Heterogeneity.ipynb**: Explores heterogeneity in visitation impacts across different dimensions (e.g., vegetation cover, fire severity, fire size) using the dynamic DiD framework.
 
 ---
 
