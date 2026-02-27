@@ -1,0 +1,524 @@
+state,siteid,recreation_status,county_name
+CA,Wf_101C,high_recreation,Alpine
+CA,Wf_132C,high_recreation,Alpine
+CA,Wf_13C,high_recreation,Alpine
+CA,Wf_141T,high_recreation,Alpine
+CA,Wf_46T,high_recreation,Alpine
+CA,Wf_64T,high_recreation,Alpine
+CA,Wf_71C,high_recreation,Alpine
+CA,Rx_7T,high_recreation,Amador
+CA,Wf_51C,high_recreation,Amador
+CA,Rx_2C,non_recreation,Butte
+CA,Wf_0T,non_recreation,Butte
+CA,Rx_8C,high_recreation,Calaveras
+CA,Wf_139C,high_recreation,Calaveras
+CA,Wf_148T,high_recreation,Calaveras
+CA,Wf_48T,high_recreation,Calaveras
+CA,Rx_21T,non_recreation,Del Norte
+CA,Wf_32T,non_recreation,Del Norte
+CA,Wf_69T,non_recreation,Del Norte
+CA,Wf_74T,non_recreation,Del Norte
+CA,Wf_83T,non_recreation,Del Norte
+CA,Wf_24T,high_recreation,El Dorado
+CA,Wf_53T,high_recreation,El Dorado
+CA,Rx_14T,non_recreation,Fresno
+CA,Rx_15T,non_recreation,Fresno
+CA,Wf_103C,non_recreation,Fresno
+CA,Wf_105C,non_recreation,Fresno
+CA,Wf_106C,non_recreation,Fresno
+CA,Wf_116C,non_recreation,Fresno
+CA,Wf_123C,non_recreation,Fresno
+CA,Wf_127C,non_recreation,Fresno
+CA,Wf_23C,non_recreation,Fresno
+CA,Wf_23T,non_recreation,Fresno
+CA,Wf_2C,non_recreation,Fresno
+CA,Wf_33T,non_recreation,Fresno
+CA,Wf_4C,non_recreation,Fresno
+CA,Wf_52C,non_recreation,Fresno
+CA,Wf_53C,non_recreation,Fresno
+CA,Wf_66T,non_recreation,Fresno
+CA,Wf_82C,non_recreation,Fresno
+CA,Wf_89T,non_recreation,Fresno
+CA,Rx_19C,non_recreation,Humboldt
+CA,Rx_29T,non_recreation,Humboldt
+CA,Rx_34T,non_recreation,Humboldt
+CA,Wf_107T,non_recreation,Humboldt
+CA,Wf_118T,non_recreation,Humboldt
+CA,Wf_1T,non_recreation,Humboldt
+CA,Wf_26T,non_recreation,Humboldt
+CA,Wf_6T,non_recreation,Humboldt
+CA,Wf_72C,non_recreation,Humboldt
+CA,Wf_75T,non_recreation,Humboldt
+CA,Wf_80T,non_recreation,Humboldt
+CA,Wf_94C,non_recreation,Humboldt
+CA,Wf_30T,non_recreation,Imperial
+CA,Wf_70C,non_recreation,Imperial
+CA,Wf_140C,high_recreation,Inyo
+CA,Wf_26C,high_recreation,Inyo
+CA,Wf_2T,high_recreation,Inyo
+CA,Wf_31T,high_recreation,Inyo
+CA,Wf_35C,high_recreation,Inyo
+CA,Wf_61C,high_recreation,Inyo
+CA,Wf_62C,high_recreation,Inyo
+CA,Wf_73T,high_recreation,Inyo
+CA,Wf_80C,high_recreation,Inyo
+CA,Wf_9C,high_recreation,Inyo
+CA,Rx_39C,non_recreation,Kern
+CA,Rx_4C,non_recreation,Kern
+CA,Wf_102T,non_recreation,Kern
+CA,Wf_105T,non_recreation,Kern
+CA,Wf_108C,non_recreation,Kern
+CA,Wf_115C,non_recreation,Kern
+CA,Wf_126C,non_recreation,Kern
+CA,Wf_128T,non_recreation,Kern
+CA,Wf_137T,non_recreation,Kern
+CA,Wf_14T,non_recreation,Kern
+CA,Wf_17C,non_recreation,Kern
+CA,Wf_43C,non_recreation,Kern
+CA,Wf_45T,non_recreation,Kern
+CA,Wf_48C,non_recreation,Kern
+CA,Wf_55T,non_recreation,Kern
+CA,Wf_5T,non_recreation,Kern
+CA,Wf_67C,non_recreation,Kern
+CA,Wf_85C,non_recreation,Kern
+CA,Wf_97C,non_recreation,Kern
+CA,Wf_98T,non_recreation,Kern
+CA,Wf_52T,non_recreation,Kings
+CA,Rx_0T,high_recreation,Lake
+CA,Rx_8T,high_recreation,Lake
+CA,Rx_15C,non_recreation,Lassen
+CA,Rx_20C,non_recreation,Lassen
+CA,Rx_22C,non_recreation,Lassen
+CA,Rx_24C,non_recreation,Lassen
+CA,Wf_10T,non_recreation,Lassen
+CA,Wf_125C,non_recreation,Lassen
+CA,Wf_127T,non_recreation,Lassen
+CA,Wf_147T,non_recreation,Lassen
+CA,Wf_21C,non_recreation,Lassen
+CA,Wf_36C,non_recreation,Lassen
+CA,Wf_57T,non_recreation,Lassen
+CA,Wf_67T,non_recreation,Lassen
+CA,Wf_68C,non_recreation,Lassen
+CA,Wf_78T,non_recreation,Lassen
+CA,Wf_8C,non_recreation,Lassen
+CA,Wf_99T,non_recreation,Lassen
+CA,Rx_40C,non_recreation,Los Angeles
+CA,Rx_42T,non_recreation,Los Angeles
+CA,Wf_103T,non_recreation,Los Angeles
+CA,Wf_109C,non_recreation,Los Angeles
+CA,Wf_110T,non_recreation,Los Angeles
+CA,Wf_115T,non_recreation,Los Angeles
+CA,Wf_119C,non_recreation,Los Angeles
+CA,Wf_122T,non_recreation,Los Angeles
+CA,Wf_134T,non_recreation,Los Angeles
+CA,Wf_15C,non_recreation,Los Angeles
+CA,Wf_17T,non_recreation,Los Angeles
+CA,Wf_24C,non_recreation,Los Angeles
+CA,Wf_38C,non_recreation,Los Angeles
+CA,Wf_77T,non_recreation,Los Angeles
+CA,Rx_11T,non_recreation,Madera
+CA,Wf_118C,non_recreation,Madera
+CA,Wf_155T,high_recreation,Marin
+CA,Rx_10T,high_recreation,Mariposa
+CA,Rx_9T,high_recreation,Mariposa
+CA,Wf_101T,high_recreation,Mariposa
+CA,Wf_117T,high_recreation,Mariposa
+CA,Wf_121C,high_recreation,Mariposa
+CA,Wf_131C,high_recreation,Mariposa
+CA,Wf_151T,high_recreation,Mariposa
+CA,Wf_16T,high_recreation,Mariposa
+CA,Wf_28C,high_recreation,Mariposa
+CA,Rx_21C,high_recreation,Mendocino
+CA,Rx_31C,high_recreation,Mendocino
+CA,Wf_39C,high_recreation,Mendocino
+CA,Wf_42C,high_recreation,Mendocino
+CA,Wf_63C,high_recreation,Mendocino
+CA,Wf_64C,high_recreation,Mendocino
+CA,Wf_69C,high_recreation,Mendocino
+CA,Wf_93C,high_recreation,Mendocino
+CA,Wf_104T,non_recreation,Merced
+CA,Wf_60C,non_recreation,Merced
+CA,Rx_24T,non_recreation,Modoc
+CA,Wf_111C,non_recreation,Modoc
+CA,Wf_11T,non_recreation,Modoc
+CA,Wf_130C,non_recreation,Modoc
+CA,Wf_31C,non_recreation,Modoc
+CA,Wf_38T,non_recreation,Modoc
+CA,Wf_4T,non_recreation,Modoc
+CA,Rx_16C,high_recreation,Mono
+CA,Rx_16T,high_recreation,Mono
+CA,Wf_12T,high_recreation,Mono
+CA,Wf_131T,high_recreation,Mono
+CA,Wf_34C,high_recreation,Mono
+CA,Wf_41T,high_recreation,Mono
+CA,Wf_7C,high_recreation,Mono
+CA,Wf_83C,high_recreation,Mono
+CA,Wf_87C,high_recreation,Mono
+CA,Wf_96T,high_recreation,Mono
+CA,Rx_13C,high_recreation,Monterey
+CA,Rx_36C,high_recreation,Monterey
+CA,Rx_9C,high_recreation,Monterey
+CA,Wf_120T,high_recreation,Monterey
+CA,Wf_133C,high_recreation,Monterey
+CA,Wf_138C,high_recreation,Monterey
+CA,Wf_141C,high_recreation,Monterey
+CA,Wf_152T,high_recreation,Monterey
+CA,Wf_27T,high_recreation,Monterey
+CA,Wf_30C,high_recreation,Monterey
+CA,Wf_43T,high_recreation,Monterey
+CA,Wf_76C,high_recreation,Monterey
+CA,Wf_79C,high_recreation,Monterey
+CA,Wf_91C,high_recreation,Monterey
+CA,Wf_56T,high_recreation,Napa
+CA,Wf_63T,high_recreation,Napa
+CA,Wf_129T,non_recreation,Orange
+CA,Wf_18T,non_recreation,Orange
+CA,Wf_90C,non_recreation,Orange
+CA,Rx_2T,high_recreation,Placer
+CA,Rx_3T,high_recreation,Placer
+CA,Wf_47C,high_recreation,Placer
+CA,Wf_94T,high_recreation,Placer
+CA,Rx_11C,high_recreation,Plumas
+CA,Rx_12C,high_recreation,Plumas
+CA,Rx_14C,high_recreation,Plumas
+CA,Rx_17C,high_recreation,Plumas
+CA,Rx_30T,high_recreation,Plumas
+CA,Rx_33C,high_recreation,Plumas
+CA,Rx_37T,high_recreation,Plumas
+CA,Rx_38C,high_recreation,Plumas
+CA,Wf_100T,high_recreation,Plumas
+CA,Wf_104C,high_recreation,Plumas
+CA,Wf_139T,high_recreation,Plumas
+CA,Wf_42T,high_recreation,Plumas
+CA,Wf_88C,high_recreation,Plumas
+CA,Wf_92C,high_recreation,Plumas
+CA,Rx_1C,high_recreation,Riverside
+CA,Rx_41T,high_recreation,Riverside
+CA,Wf_107C,high_recreation,Riverside
+CA,Wf_11C,high_recreation,Riverside
+CA,Wf_124T,high_recreation,Riverside
+CA,Wf_132T,high_recreation,Riverside
+CA,Wf_143T,high_recreation,Riverside
+CA,Wf_18C,high_recreation,Riverside
+CA,Wf_20T,high_recreation,Riverside
+CA,Wf_25C,high_recreation,Riverside
+CA,Wf_37C,high_recreation,Riverside
+CA,Wf_46C,high_recreation,Riverside
+CA,Wf_50T,high_recreation,Riverside
+CA,Wf_65T,high_recreation,Riverside
+CA,Wf_66C,high_recreation,Riverside
+CA,Wf_81T,high_recreation,Riverside
+CA,Wf_8T,high_recreation,Riverside
+CA,Wf_59T,non_recreation,Sacramento
+CA,Wf_19C,non_recreation,San Benito
+CA,Wf_77C,non_recreation,San Benito
+CA,Rx_42C,non_recreation,San Bernardino
+CA,Wf_114T,non_recreation,San Bernardino
+CA,Wf_14C,non_recreation,San Bernardino
+CA,Wf_157T,non_recreation,San Bernardino
+CA,Wf_15T,non_recreation,San Bernardino
+CA,Wf_1C,non_recreation,San Bernardino
+CA,Wf_44T,non_recreation,San Bernardino
+CA,Wf_47T,non_recreation,San Bernardino
+CA,Wf_72T,non_recreation,San Bernardino
+CA,Wf_86C,non_recreation,San Bernardino
+CA,Wf_89C,non_recreation,San Bernardino
+CA,Wf_91T,non_recreation,San Bernardino
+CA,Rx_38T,non_recreation,San Diego
+CA,Rx_39T,non_recreation,San Diego
+CA,Rx_40T,non_recreation,San Diego
+CA,Wf_100C,non_recreation,San Diego
+CA,Wf_117C,non_recreation,San Diego
+CA,Wf_129C,non_recreation,San Diego
+CA,Wf_136T,non_recreation,San Diego
+CA,Wf_146T,non_recreation,San Diego
+CA,Wf_21T,non_recreation,San Diego
+CA,Wf_27C,non_recreation,San Diego
+CA,Wf_29T,non_recreation,San Diego
+CA,Wf_34T,non_recreation,San Diego
+CA,Wf_41C,non_recreation,San Diego
+CA,Wf_54C,non_recreation,San Diego
+CA,Wf_71T,non_recreation,San Diego
+CA,Wf_109T,high_recreation,San Luis Obispo
+CA,Wf_133T,high_recreation,San Luis Obispo
+CA,Wf_22T,high_recreation,San Luis Obispo
+CA,Wf_70T,high_recreation,San Luis Obispo
+CA,Wf_108T,high_recreation,Santa Barbara
+CA,Wf_125T,high_recreation,Santa Barbara
+CA,Wf_29C,high_recreation,Santa Barbara
+CA,Wf_3T,high_recreation,Santa Barbara
+CA,Wf_57C,high_recreation,Santa Barbara
+CA,Wf_78C,high_recreation,Santa Barbara
+CA,Wf_96C,high_recreation,Santa Barbara
+CA,Wf_126T,non_recreation,Santa Clara
+CA,Wf_35T,non_recreation,Santa Clara
+CA,Wf_37T,high_recreation,Santa Cruz
+CA,Rx_0C,non_recreation,Shasta
+CA,Rx_18C,non_recreation,Shasta
+CA,Rx_23C,non_recreation,Shasta
+CA,Rx_25C,non_recreation,Shasta
+CA,Rx_26T,non_recreation,Shasta
+CA,Rx_27T,non_recreation,Shasta
+CA,Rx_29C,non_recreation,Shasta
+CA,Rx_31T,non_recreation,Shasta
+CA,Rx_32T,non_recreation,Shasta
+CA,Rx_33T,non_recreation,Shasta
+CA,Wf_123T,non_recreation,Shasta
+CA,Wf_128C,non_recreation,Shasta
+CA,Wf_158T,non_recreation,Shasta
+CA,Wf_22C,non_recreation,Shasta
+CA,Wf_40C,non_recreation,Shasta
+CA,Wf_45C,non_recreation,Shasta
+CA,Wf_50C,non_recreation,Shasta
+CA,Wf_51T,non_recreation,Shasta
+CA,Wf_75C,non_recreation,Shasta
+CA,Wf_81C,non_recreation,Shasta
+CA,Wf_84C,non_recreation,Shasta
+CA,Rx_1T,high_recreation,Sierra
+CA,Rx_4T,high_recreation,Sierra
+CA,Wf_136C,high_recreation,Sierra
+CA,Wf_6C,high_recreation,Sierra
+CA,Wf_82T,high_recreation,Sierra
+CA,Wf_99C,high_recreation,Sierra
+CA,Rx_10C,non_recreation,Siskiyou
+CA,Rx_18T,non_recreation,Siskiyou
+CA,Rx_19T,non_recreation,Siskiyou
+CA,Rx_20T,non_recreation,Siskiyou
+CA,Rx_22T,non_recreation,Siskiyou
+CA,Rx_23T,non_recreation,Siskiyou
+CA,Rx_25T,non_recreation,Siskiyou
+CA,Rx_26C,non_recreation,Siskiyou
+CA,Rx_27C,non_recreation,Siskiyou
+CA,Rx_32C,non_recreation,Siskiyou
+CA,Rx_34C,non_recreation,Siskiyou
+CA,Rx_3C,non_recreation,Siskiyou
+CA,Rx_41C,non_recreation,Siskiyou
+CA,Wf_0C,non_recreation,Siskiyou
+CA,Wf_106T,non_recreation,Siskiyou
+CA,Wf_10C,non_recreation,Siskiyou
+CA,Wf_130T,non_recreation,Siskiyou
+CA,Wf_142T,non_recreation,Siskiyou
+CA,Wf_145T,non_recreation,Siskiyou
+CA,Wf_156T,non_recreation,Siskiyou
+CA,Wf_16C,non_recreation,Siskiyou
+CA,Wf_25T,non_recreation,Siskiyou
+CA,Wf_32C,non_recreation,Siskiyou
+CA,Wf_36T,non_recreation,Siskiyou
+CA,Wf_3C,non_recreation,Siskiyou
+CA,Wf_40T,non_recreation,Siskiyou
+CA,Wf_49T,non_recreation,Siskiyou
+CA,Wf_54T,non_recreation,Siskiyou
+CA,Wf_55C,non_recreation,Siskiyou
+CA,Wf_56C,non_recreation,Siskiyou
+CA,Wf_5C,non_recreation,Siskiyou
+CA,Wf_60T,non_recreation,Siskiyou
+CA,Wf_62T,non_recreation,Siskiyou
+CA,Wf_65C,non_recreation,Siskiyou
+CA,Wf_79T,non_recreation,Siskiyou
+CA,Wf_7T,non_recreation,Siskiyou
+CA,Wf_84T,non_recreation,Siskiyou
+CA,Wf_86T,non_recreation,Siskiyou
+CA,Wf_88T,non_recreation,Siskiyou
+CA,Wf_95T,non_recreation,Siskiyou
+CA,Wf_98C,non_recreation,Siskiyou
+CA,Wf_111T,non_recreation,Solano
+CA,Wf_150T,high_recreation,Sonoma
+CA,Wf_87T,high_recreation,Sonoma
+CA,Rx_35C,non_recreation,Tehama
+CA,Wf_44C,non_recreation,Tehama
+CA,Wf_49C,non_recreation,Tehama
+CA,Wf_85T,non_recreation,Tehama
+CA,Rx_35T,high_recreation,Trinity
+CA,Rx_36T,high_recreation,Trinity
+CA,Rx_37C,high_recreation,Trinity
+CA,Wf_102C,high_recreation,Trinity
+CA,Wf_113C,high_recreation,Trinity
+CA,Wf_33C,high_recreation,Trinity
+CA,Wf_39T,high_recreation,Trinity
+CA,Wf_58C,high_recreation,Trinity
+CA,Wf_61T,high_recreation,Trinity
+CA,Wf_73C,high_recreation,Trinity
+CA,Wf_92T,high_recreation,Trinity
+CA,Wf_9T,high_recreation,Trinity
+CA,Wf_110C,non_recreation,Tulare
+CA,Wf_112C,non_recreation,Tulare
+CA,Wf_113T,non_recreation,Tulare
+CA,Wf_114C,non_recreation,Tulare
+CA,Wf_116T,non_recreation,Tulare
+CA,Wf_119T,non_recreation,Tulare
+CA,Wf_122C,non_recreation,Tulare
+CA,Wf_124C,non_recreation,Tulare
+CA,Wf_12C,non_recreation,Tulare
+CA,Wf_137C,non_recreation,Tulare
+CA,Wf_140T,non_recreation,Tulare
+CA,Wf_149T,non_recreation,Tulare
+CA,Wf_153T,non_recreation,Tulare
+CA,Wf_20C,non_recreation,Tulare
+CA,Wf_28T,non_recreation,Tulare
+CA,Wf_58T,non_recreation,Tulare
+CA,Wf_59C,non_recreation,Tulare
+CA,Wf_76T,non_recreation,Tulare
+CA,Wf_93T,non_recreation,Tulare
+CA,Wf_95C,non_recreation,Tulare
+CA,Wf_97T,non_recreation,Tulare
+CA,Rx_12T,high_recreation,Tuolumne
+CA,Rx_13T,high_recreation,Tuolumne
+CA,Rx_17T,high_recreation,Tuolumne
+CA,Wf_112T,high_recreation,Tuolumne
+CA,Wf_121T,high_recreation,Tuolumne
+CA,Wf_134C,high_recreation,Tuolumne
+CA,Wf_135C,high_recreation,Tuolumne
+CA,Wf_138T,high_recreation,Tuolumne
+CA,Wf_13T,high_recreation,Tuolumne
+CA,Wf_144T,high_recreation,Tuolumne
+CA,Wf_154T,high_recreation,Tuolumne
+CA,Wf_19T,high_recreation,Tuolumne
+CA,Wf_74C,high_recreation,Tuolumne
+CA,Wf_90T,high_recreation,Tuolumne
+CA,Wf_120C,non_recreation,Ventura
+CA,Wf_135T,non_recreation,Ventura
+CA,Wf_68T,non_recreation,Ventura
+CO,847,high_recreation,Adams
+CO,843,non_recreation,Arapahoe
+CO,447,high_recreation,Archuleta
+CO,778,non_recreation,Baca
+CO,779,non_recreation,Baca
+CO,801,non_recreation,Baca
+CO,838,non_recreation,Baca
+CO,814,non_recreation,Bent
+CO,818,non_recreation,Bent
+CO,829,non_recreation,Bent
+CO,830,non_recreation,Bent
+CO,743,non_recreation,Boulder
+CO,819,non_recreation,Boulder
+CO,835,non_recreation,Boulder
+CO,767,high_recreation,Chaffee
+CO,768,high_recreation,Chaffee
+CO,265,non_recreation,Cheyenne
+CO,62,high_recreation,Clear Creek
+CO,670,high_recreation,Clear Creek
+CO,642,non_recreation,Conejos
+CO,588,high_recreation,Delta
+CO,664,high_recreation,Dolores
+CO,17,high_recreation,Douglas
+CO,756,high_recreation,Douglas
+CO,807,high_recreation,Douglas
+CO,428,high_recreation,Eagle
+CO,592,high_recreation,Eagle
+CO,761,high_recreation,Eagle
+CO,763,high_recreation,Eagle
+CO,765,high_recreation,Eagle
+CO,766,high_recreation,Eagle
+CO,798,high_recreation,Eagle
+CO,799,high_recreation,Eagle
+CO,850,high_recreation,Eagle
+CO,266,non_recreation,Elbert
+CO,735,non_recreation,Elbert
+CO,844,non_recreation,El Paso
+CO,845,non_recreation,El Paso
+CO,846,non_recreation,El Paso
+CO,472,non_recreation,Fremont
+CO,490,high_recreation,Garfield
+CO,586,high_recreation,Garfield
+CO,606,high_recreation,Garfield
+CO,640,high_recreation,Garfield
+CO,658,high_recreation,Garfield
+CO,716,high_recreation,Garfield
+CO,749,high_recreation,Garfield
+CO,831,high_recreation,Garfield
+CO,842,high_recreation,Garfield
+CO,827,high_recreation,Grand
+CO,855,high_recreation,Grand
+CO,599,high_recreation,Gunnison
+CO,759,high_recreation,Gunnison
+CO,834,high_recreation,Gunnison
+CO,652,high_recreation,Huerfano
+CO,654,high_recreation,Huerfano
+CO,731,high_recreation,Huerfano
+CO,737,high_recreation,Huerfano
+CO,840,high_recreation,Jackson
+CO,454,non_recreation,Kiowa
+CO,832,non_recreation,Kiowa
+CO,14,non_recreation,Kit Carson
+CO,264,non_recreation,Kit Carson
+CO,587,non_recreation,Kit Carson
+CO,736,non_recreation,Kit Carson
+CO,461,high_recreation,La Plata
+CO,825,high_recreation,La Plata
+CO,434,high_recreation,Larimer
+CO,456,high_recreation,Larimer
+CO,571,high_recreation,Larimer
+CO,575,high_recreation,Larimer
+CO,619,high_recreation,Larimer
+CO,623,high_recreation,Larimer
+CO,719,high_recreation,Larimer
+CO,773,high_recreation,Larimer
+CO,774,high_recreation,Larimer
+CO,820,high_recreation,Larimer
+CO,410,non_recreation,Las Animas
+CO,425,non_recreation,Las Animas
+CO,660,non_recreation,Las Animas
+CO,813,non_recreation,Las Animas
+CO,817,non_recreation,Las Animas
+CO,821,non_recreation,Las Animas
+CO,824,non_recreation,Las Animas
+CO,826,non_recreation,Las Animas
+CO,852,non_recreation,Las Animas
+CO,618,high_recreation,Lincoln
+CO,11,non_recreation,Logan
+CO,15,non_recreation,Logan
+CO,393,non_recreation,Logan
+CO,402,non_recreation,Logan
+CO,7,non_recreation,Logan
+CO,649,non_recreation,Mesa
+CO,683,non_recreation,Mesa
+CO,720,non_recreation,Mesa
+CO,734,non_recreation,Mesa
+CO,755,non_recreation,Mesa
+CO,770,non_recreation,Mesa
+CO,848,non_recreation,Mesa
+CO,796,non_recreation,Moffat
+CO,849,non_recreation,Moffat
+CO,853,non_recreation,Moffat
+CO,376,non_recreation,Montezuma
+CO,781,non_recreation,Montezuma
+CO,784,non_recreation,Montezuma
+CO,785,non_recreation,Montezuma
+CO,787,non_recreation,Montezuma
+CO,788,non_recreation,Montezuma
+CO,269,non_recreation,Montrose
+CO,794,non_recreation,Montrose
+CO,816,non_recreation,Morgan
+CO,1,non_recreation,Otero
+CO,13,non_recreation,Otero
+CO,815,non_recreation,Otero
+CO,723,high_recreation,Ouray
+CO,793,high_recreation,Park
+CO,805,high_recreation,Pitkin
+CO,851,non_recreation,Pueblo
+CO,624,non_recreation,Rio Blanco
+CO,676,non_recreation,Rio Blanco
+CO,828,non_recreation,Rio Blanco
+CO,841,non_recreation,Rio Blanco
+CO,267,high_recreation,Routt
+CO,688,high_recreation,Routt
+CO,690,high_recreation,Routt
+CO,696,high_recreation,Routt
+CO,836,high_recreation,Routt
+CO,837,high_recreation,Routt
+CO,839,high_recreation,Routt
+CO,442,non_recreation,Saguache
+CO,607,non_recreation,Saguache
+CO,738,non_recreation,Saguache
+CO,758,non_recreation,Saguache
+CO,760,non_recreation,Saguache
+CO,810,non_recreation,Saguache
+CO,271,non_recreation,San Miguel
+CO,666,non_recreation,San Miguel
+CO,833,high_recreation,Teller
+CO,679,non_recreation,Washington
+CO,823,non_recreation,Washington
+CO,5,non_recreation,Weld
+CO,812,non_recreation,Weld
+CO,854,non_recreation,Weld
+CO,822,high_recreation,Yuma
