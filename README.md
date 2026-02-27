@@ -73,17 +73,20 @@ All analysis code is written in Python. Key packages include pyfixest (differenc
 CIRES, Earth Lab, University of Colorado Boulder
 
 **Collaborators and Co-Authors:** 
-- Dr. Kyle Manley: Cooperative Institute for Research in Environmental Sciences; University of Colorado Boulder; Earth Lab
-- Dr. Laura Dee: University of Colorado Boulder; Department of Ecology and Evolutionary Biology
-- Dr. Jennifer Balch: The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
+- Kyle Manley: Cooperative Institute for Research in Environmental Sciences; University of Colorado Boulder; Earth Lab
+- Spencer Wood: University of Washington; School of Environmental and Forest Sciences; Outdoor Recreation & Data Lab
+- Cody Evers: Portland State University; Department of Environmental Science and Management
+- Holly Nowell: Tall Timbers Research Station & Land Conservancy
+- Katherine Siegel: Cooperative Institute for Research in Environmental Sciences; The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
+- Jennifer Balch: The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
+- Laura Braun: University of Washington; Outdoor Recreation & Data Lab
+- Ash Cale: University of Nevada Reno; Department of Natural Resources and Environmental Sciences
+- Jason Kreitler: U.S. Geological Survey, Western Geographic Science Center
 - Anna LoPresti: University of Colorado Boulder; Department of Ecology and Evolutionary Biology
-- Dr. Cody Evers: Portland State University; Department of Environmental Science and Management
-- Dr. Holly Nowell: Tall Timbers Research Station & Land Conservancy
-- Dr. Spencer Wood: University of Washington; School of Environmental and Forest Sciences
-- Dr. Katherine Siegel: Cooperative Institute for Research in Environmental Sciences; The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
-- Dr. Jamie Peeler:  University of Montana; Department of Ecosystem and Conservation Sciences
 - Tyler McIntosh: University of Colorado Boulder; Department of Geography; Department of Ecology and Evolutionary Biology
-- Dr. Ash Cale: University of Nevada Reno; Department of Natural Resources and Environmental Sciences
+- Jamie Peeler:  University of Montana; Department of Ecosystem and Conservation Sciences
+- Miguel Villarreal: U.S. Geological Survey, Western Geographic Science Center
+- Laura Dee: University of Colorado Boulder; Department of Ecology and Evolutionary Biology
 
 Questions, suggestions, or issues can be submitted via GitHub Issues or by contacting the lead author directly.
 
