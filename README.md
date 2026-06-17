@@ -90,10 +90,6 @@ CIRES, Earth Lab, University of Colorado Boulder
 
 Questions, suggestions, or issues can be submitted via GitHub Issues or by contacting the lead author directly.
 
-## Acknowledgments
-
-This research was supported by the CIRES Visiting Fellowship Program and the MORPHO Rx Working Group. We thank the USFS, NPS, FWS, BLM, and Boulder OSMP for providing visitation data, and the University of Washington Outdoor R&D Lab for curated recreation datasets. We are grateful to all co-authors and collaborators who contributed to this work.
-
 ## License
 
 This project is licensed under Creative Commons Attribution 4.0 International License (CC BY 4.0). See LICENSE file for details.
