@@ -72,7 +72,7 @@ All analysis code is written in Python. Key packages include pyfixest (differenc
 **Lead Author:** Kyle Manley (kyle.manley@colorado.edu)  
 CIRES, Earth Lab, University of Colorado Boulder
 
-**Collaborators and Co-Authors:** 
+**Collaborators:** 
 - Kyle Manley: Cooperative Institute for Research in Environmental Sciences; University of Colorado Boulder; Earth Lab
 - Spencer Wood: University of Washington; School of Environmental and Forest Sciences; Outdoor Recreation & Data Lab
 - Cody Evers: Portland State University; Department of Environmental Science and Management
