@@ -1,4 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
 .venv/
-.vscode/
+.pytest_cache/
+.ruff_cache/
+
+# OS/editor
 .DS_Store
-.trash/
+.vscode/
+
+# Generated analysis products
+data/04_analysis/
+outputs/tables/*.csv
+outputs/figures/*.png
+outputs/figures/*.pdf

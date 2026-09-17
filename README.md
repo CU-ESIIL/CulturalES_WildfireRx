@@ -1,100 +1,102 @@
-# Fire and Recreation in the U.S. West: Modeling Impacts of Wildfire and Prescribed Fire on Nature's Non-Material Contributions to People
+# CulturalES_WildfireRx
 
-**A comprehensive analysis of fire effects on public land visitation across California and Colorado (2020-2024)**
+Reproducible Python workflow for the analysis of wildfire, prescribed fire, and public-land recreation in California and Colorado.
 
-This repository contains code and data for quantifying how wildfire and prescribed fire reshape recreational visitation on public lands. Recreation is among the most prominent non-material contributions of nature (cultural ecosystem services) to human well-being, supporting local economies, cultural connection, and place-based values across the western United States. This work is part of the [MORPHO Rx Working Group](https://rx-char.github.io/) and a Cooperative Institute for Research in Environmental Sciences [Visiting Fellowship Program project](https://cires.colorado.edu/people/kyle-manley).
+The repository contains the processed inputs and analysis code required to reproduce the manuscript's causal estimates, heterogeneity analyses, summary tables, and figures.
+
+## Analysis
+
+The final sample includes 185 wildfire treatment sites and 54 prescribed-fire treatment sites with matched never-treated controls. Monthly visitation is represented by state-specific machine-learning predictions and analyzed using saturated Sun-Abraham event studies.
+
+The event-study outcome is the prediction produced by the selected visitation model on the scale on which that model was fit. Colorado predictions are on the square-root outcome scale and California predictions are on the identity scale. Models adjust for monthly mean temperature.
+
+Heterogeneity is estimated by fire size, fire severity, vegetation type, and recreation context. Fire size is calculated directly from the treatment polygons in `data/01_fire_perimeters/` after reprojection to CONUS Albers Equal Area (`EPSG:5070`). State-specific size classes are defined from terciles of treated-site area. Continuous response functions additionally estimate how fire effects vary with weighted CBI and fire area.
+
+## Repository structure
+
+```text
+CulturalES_WildfireRx/
+├── README.md
+├── LICENSE
+├── pyproject.toml
+├── run_all.py
+├── data/
+│   ├── 01_fire_perimeters/     # treatment polygons used for fire-size calculations
+│   ├── 02_site_features/       # site covariates and covariate documentation
+│   ├── 03_visitation/          # visitation predictions and treatment timing
+│   └── 04_analysis/            # generated intermediate analysis tables
+├── src/recfire/                # reusable analysis functions
+├── scripts/
+│   ├── 01_validate_inputs.py
+│   ├── 02_calculate_fire_size.py
+│   ├── 03_build_analysis_data.py
+│   ├── 04_describe_sample.py
+│   ├── 05_estimate_firetype.py
+│   ├── 06_estimate_heterogeneity.py
+│   ├── 07_plot_firetype.py
+│   ├── 08_plot_heterogeneity.py
+│   └── 09_continuous_response_functions.py
+└── outputs/
+    ├── tables/
+    └── figures/
+```
+
+## Installation
+
+```bash
+git clone https://github.com/CU-ESIIL/CulturalES_WildfireRx.git
+cd CulturalES_WildfireRx
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -e .
+```
+
+## Run the analysis
+
+```bash
+python run_all.py
+```
+
+The workflow calculates fire area, builds the analysis panels, summarizes the treatment sample, estimates overall and heterogeneous fire effects, recreates the manuscript figures, and estimates continuous response functions for fire severity and size.
+
+## Inputs
+
+`data/01_fire_perimeters/CO_treatment_perimeters.gpkg` contains the 44 wildfire and 22 prescribed-fire treatment sites in the Colorado analysis.
+
+`data/01_fire_perimeters/CA_treatment_perimeters.gpkg` contains the 141 wildfire and 32 prescribed-fire treatment sites in the California analysis.
+
+`data/02_site_features/` contains the monthly and static covariates used by the analysis. `ModelCovariates.xlsx` documents the candidate visitation-model predictors.
+
+`data/03_visitation/` contains state-specific monthly visitation predictions, treatment labels, and treatment timing.
+
+## Outputs
+
+Result tables are written to `outputs/tables/`:
+
+- `did_results_firetype.csv`: overall wildfire and prescribed-fire event-study estimates.
+- `did_heterogeneity_results.csv`: event-study estimates by fire size, severity, vegetation, and recreation context.
+- `fire_characteristics_summary.csv`: treatment-sample fire characteristics.
+- `size_class_counts.csv`: treatment-site counts by fire-size class.
+- `continuous_moderator_effects_comprehensive.csv`: annual baseline and interaction coefficients for continuous severity and fire-size models.
+- `severity_response_function_coefficients.csv`: severity response-function coefficients.
+- `severity_response_function_lookup.csv`: effects evaluated at common CBI values.
+- `severity_response_function_wildfire_summary.csv`: wildfire effects at representative low-, moderate-, and high-severity CBI values for Years 1, 3, and 5.
+- `size_response_function_coefficients.csv`: fire-size response-function coefficients using corrected polygon area.
+- `size_response_function_lookup.csv`: effects evaluated at the 10th, 25th, 50th, 75th, and 90th percentiles of observed fire size.
+- `size_response_function_wildfire_summary.csv`: wildfire effects evaluated at representative corrected areas for the small, medium, and large size classes in Years 1, 3, and 5.
+- `continuous_response_function_curves.csv`: values used to reproduce the continuous response-function figures.
+
+Figures are written to `outputs/figures/`:
+
+- `Overall_Effects.png`
+- `Overall_Effects.pdf`
+- `Heterogeneous_Effects.png`
+- `Heterogeneous_Effects.pdf`
+- `FigS_Severity_Response_Functions.png`
+- `FigS_Severity_Response_Functions.pdf`
+- `FigS_Size_Response_Functions.png`
+- `FigS_Size_Response_Functions.pdf`
 
 ## Citation
 
-Manley, K., Wood, S., Evers, C., Nowell, H., Balch, J.K., Braun, L., Cale, A., LoPresti, A., McIntosh, T.L., Peeler, J., Siegel, K., & Dee, L.E. (2025). Fire and Recreation in the U.S. West: Modeling Impacts of Wildfire and Prescribed Fire on Nature's Non-Material Contributions to People. *In preparation*.
-
-## Research Questions
-
-**1. How do wildfire and prescribed fire differentially affect public land visitation?**
-- Does prescribed fire mitigate recreational losses compared to wildfire?
-- How do impacts vary by fire characteristics (type, severity, size)?
-- How do impacts vary by landscape context (state, vegetation type, land manager)?
-- How persistent are impacts and do sites recover over time?
-
-**2. Who bears the burden of fire impacts on recreation?**
-- Do recreation-dependent counties experience disproportionate wildfire exposure and impacts?
-- What are the implications for environmental justice and equitable fire management?
-
-![Cultural Ecosystem Services Model](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/figures/concept_fig.png)
-
-## Key Findings
-
-- **Wildfire reduces visitation substantially** (15-18% in Year 1) with multi-year persistence, while **prescribed fire shows neutral-to-positive effects** (+1-5% in Year 1)
-- **Fire size and severity drive impacts**: Large, high-severity wildfires reduce visitation by 24-58%, while low-severity fires show smaller, transient effects more negatie, but comparable to prescribed fire
-- **Geographic heterogeneity matters**: Colorado wildfire sites show 46% recovery by Year 5, while California sites show minimal recovery (13%)
-- **Vegetation context is critical**: Forested sites experience 4-5× greater impacts (-25-26%) than grassland sites (-5-6%)
-- **Environmental justice implications**: Recreation-dependent counties in Colorado experienced a 1.45× exposure-impact gap, bearing disproportionate wildfire burdens despite lower fire exposure
-- **Recovery trajectories diverge**: High-severity impacts persist for years, while low-severity sites show partial recovery by Year 5, particularly in Colorado
-
-## Study Overview
-
-**Study Area:** Public lands across California and Colorado (2020-2024)
-
-**Treatment Sites:**
-- California: 141 wildfires, 32 prescribed fire clusters
-- Colorado: 44 wildfires, 22 prescribed fire clusters
-
-**Data Sources:**
-- Fire perimeters: MTBS (2020-2024), USFS Activity Tracking System
-- Visitation counts: USFS, NPS, FWS, BLM (16 sites CO, 27 sites CA)
-- Digital mobility: Flickr, eBird, AllTrails, Reveal mobile phone data
-- Environmental: LandFire (vegetation, topography), TerraClimate (weather), PADUS (land management), RIDB (recreation facilities)
-
-## Repository Organization
-
-**code/** - Analysis scripts organized by workflow stage: data processing (fire perimeter processing, control site matching), visitation modeling (ML model training and prediction), and causal analysis (DiD estimation, heterogeneity analysis)
-
-**data/** - Processed datasets used in the analysis
-
-**outputs/** - Publication-quality figures, summary statistics tables, model results, and trained visitation models
-
-## How do quantify fire's imapct on recreation?
-
-1. **Visitation Modeling**: Machine learning models trained with on-site visitation counts from federal and local agencies. Model performance: R² = 0.63-0.81 across states using Gradient Boosting (CA) and Extra Trees (CO) algorithms with predictors including mobility proxies, weather, landscape attributes, and recreation facilities.
-
-2. **Causal Inference**: Treatment sites (wildfires and prescribed fires) matched on confoudning varaibles with unburned control sites based on 9 confounders (accessibility, trail density, elevation, slope, shrub cover, tree cover, grass cover, temperature, precipitation). Dynamic difference-in-differences event study design estimated fire effects.
-
-3. **Heterogeneity Analysis**: Effects stratified by fire size (small/medium/large), severity (CBI-based low/moderate/high), and vegetation type (grass/shrub/forest).
-
-![Our Approach](https://github.com/CU-ESIIL/CulturalES_WildfireRx/blob/main/outputs/figures/MethodsFigure.png)
-
-## Code and Reproducibility
-
-All analysis code is written in Python. Key packages include pyfixest (difference-in-differences), scikit-learn/xgboost/lightgbm (machine learning), geopandas (spatial analysis), and matplotlib/seaborn (visualization).
-
-## Contact
-
-**Lead Author:** Kyle Manley (kyle.manley@colorado.edu)  
-CIRES, Earth Lab, University of Colorado Boulder
-
-**Collaborators:** 
-- Kyle Manley: Cooperative Institute for Research in Environmental Sciences; University of Colorado Boulder; Earth Lab
-- Spencer Wood: University of Washington; School of Environmental and Forest Sciences; Outdoor Recreation & Data Lab
-- Cody Evers: Portland State University; Department of Environmental Science and Management
-- Holly Nowell: Tall Timbers Research Station & Land Conservancy
-- Katherine Siegel: Cooperative Institute for Research in Environmental Sciences; The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
-- Jennifer Balch: The Environmental Data Science Innovation & Impact Lab; University of Colorado Boulder; Department of Geography
-- Laura Braun: University of Washington; Outdoor Recreation & Data Lab
-- Ash Cale: University of Nevada Reno; Department of Natural Resources and Environmental Sciences
-- Jason Kreitler: U.S. Geological Survey, Western Geographic Science Center
-- Anna LoPresti: University of Colorado Boulder; Department of Ecology and Evolutionary Biology
-- Tyler McIntosh: University of Colorado Boulder; Department of Geography; Department of Ecology and Evolutionary Biology
-- Jamie Peeler:  University of Montana; Department of Ecosystem and Conservation Sciences
-- Miguel Villarreal: U.S. Geological Survey, Western Geographic Science Center
-- Laura Dee: University of Colorado Boulder; Department of Ecology and Evolutionary Biology
-
-Questions, suggestions, or issues can be submitted via GitHub Issues or by contacting the lead author directly.
-
-## License
-
-This project is licensed under Creative Commons Attribution 4.0 International License (CC BY 4.0). See LICENSE file for details.
-
-
-
-
-
+Manley, K. et al. *Large Recreation Declines Persist for Years after Severe Wildfire but Not after Low-Severity or Prescribed Fire.*
